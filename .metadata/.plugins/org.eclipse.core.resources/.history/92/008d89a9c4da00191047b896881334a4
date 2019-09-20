@@ -1,0 +1,10 @@
+package com.list.bl;
+
+public class Application {
+
+	public static void main(String[] args) {
+		List<Integer> list1 = new ArrayList<>();
+		list1.add(20);
+		System.out.println(list1);
+	}
+}

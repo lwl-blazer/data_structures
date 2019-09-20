@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;ArrayList.java&apos; to &apos;链表/src/com.list.bl&apos;&#x0A;- Original project: &apos;Test&apos;&#x0A;- Destination element: &apos;链表/src/com.list.bl&apos;&#x0A;- Original element: &apos;com.bl.ArrayList.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=链表/src&lt;com.list.bl" element1="/src&lt;com.bl{ArrayList.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1568883247686" units="1" version="1.0"/>
+</session>

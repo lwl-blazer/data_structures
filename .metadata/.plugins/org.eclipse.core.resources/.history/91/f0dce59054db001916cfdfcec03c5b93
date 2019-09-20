@@ -38,11 +38,11 @@ public class LinkedList<E> extends AbstractList<E> {
 
 	@Override
 	public void add(int index, E element) {
-		Node<E> node = firstNode;
-		if (node == null) {
+		if (firstNode == null) {
 			Node<E> newNode = new Node<>(element, null);
 			firstNode = newNode;
 		} else {
+			Node<E> node = firstNode;
 			for (int i = 1; i < index; i++) {
 				node = node.next;
 			}

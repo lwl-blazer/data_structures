@@ -6,12 +6,11 @@ public class Application {
 		LinkedList<Integer> list = new LinkedList<>();
 		list.add(90);
 		list.add(30);
+		list.add(0, 20);
 		System.out.println(list);
 		
 		ArrayList<Integer> list1 = new ArrayList<>();
 		list1.add(20);
-		list1.add(30);
-		list.add(0, 40);
 		System.out.println(list1);
 	}
 }

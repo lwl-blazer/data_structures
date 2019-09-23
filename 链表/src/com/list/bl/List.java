@@ -1,6 +1,9 @@
 package com.list.bl;
 
 public interface List<E> {
+
+	static final int ELEMENT_NOT_FOUND = -1;
+
 	void clear();
 
 	boolean contains(E element);

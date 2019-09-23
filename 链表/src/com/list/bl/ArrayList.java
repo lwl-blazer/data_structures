@@ -4,9 +4,7 @@ package com.list.bl;
 public class ArrayList<E> extends AbstractList<E> {
 	
 	private E[] elements;
-	
 	private static final int DEFAULT_CAPACITY = 10;
-	
 	
 	/**
 	 * 构造函数*/
@@ -132,7 +130,6 @@ public class ArrayList<E> extends AbstractList<E> {
 		elements = newElements;
 		System.out.println(oldCapacity + "扩容为" + newCapacity);
 	}
-	
 	
 	
 	@Override

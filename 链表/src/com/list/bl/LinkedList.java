@@ -16,7 +16,8 @@ public class LinkedList<E> extends AbstractList<E> {
 
 	@Override
 	public void clear() {
-
+		size = 0;
+		firstNode = null;
 	}
 
 	@Override
@@ -26,42 +27,65 @@ public class LinkedList<E> extends AbstractList<E> {
 
 	@Override
 	public E get(int index) {
-
-		return null;
+		return node(index).element;
 	}
 
 	@Override
 	public E set(int index, E element) {
-
-		return null;
+		Node<E> node = node(index);
+		E old = node.element;
+		node.element = element;
+		return old;
 	}
 
 	@Override
 	public void add(int index, E element) {
-		Node<E> node = firstNode;
-		if (node == null) {
-			Node<E> newNode = new Node<>(element, null);
-			firstNode = newNode;
+		if (index == 0) {
+			firstNode = new Node<>(element, firstNode);
 		} else {
-			for (int i = 1; i < index; i++) {
-				node = node.next;
-			}
-			Node<E> newNode = new Node<>(element, node.next);
-			node.next = newNode;
+			Node<E> prev = node(index - 1);
+			prev.next = new Node<>(element, prev.next);
 		}
 		size ++;
 	}
 
 	@Override
 	public E remove(int index) {
-
-		return null;
+		E old;
+		if (index == 0) {
+			if (firstNode == null) {
+				return null;
+			}
+			
+			old = firstNode.element;
+		    firstNode = firstNode.next;
+		} else {
+			Node<E> node = node(index - 1);
+			old = node.next.element;
+			node.next = node.next.next;
+		}
+		size--;
+		return old;
 	}
 
 	@Override
 	public int indexOf(E element) {
-
-		return 0;
+		if (element == null) {
+			return ELEMENT_NOT_FOUND;
+		}
+		
+		Node<E> node = firstNode;
+		int i = 0;
+		while (node != null) {
+			
+			if (element.equals(node.element)) {
+				return i;
+			}
+			node = node.next;
+			i ++;
+		}
+		 
+		return ELEMENT_NOT_FOUND;
 	}
 
 	@Override
@@ -80,4 +104,16 @@ public class LinkedList<E> extends AbstractList<E> {
 		string.append("]");
 		return string.toString();
 	}
+	
+	private Node<E> node(int index) {
+		rangeCheck(index);
+		
+		Node<E> node = firstNode;
+		for (int i = 0; i < index; i++) {
+			node = node.next;
+		}
+		return node;
+	}
+	
+	
 }

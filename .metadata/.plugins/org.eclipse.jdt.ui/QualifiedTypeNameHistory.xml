@@ -11,9 +11,12 @@
     <fullyQualifiedTypeName name="com.bl.ArrayList"/>
     <fullyQualifiedTypeName name="com.bl.Person"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="com.list.bl.LinkedList"/>
     <fullyQualifiedTypeName name="com.list.bl.AbstractList"/>
     <fullyQualifiedTypeName name="com.list.bl.List"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.classfile.Node"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.graph.Graph.NodeEvent"/>
+    <fullyQualifiedTypeName name="com.list.bl.LinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.list.bl.LinkedList"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="com.list.bl.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.System"/>

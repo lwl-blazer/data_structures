@@ -1,76 +1,47 @@
 package com.list.bl;
 
-public class AbstractList<E> implements List<E> {
+public abstract class AbstractList<E> implements List<E> {
 
-	//元素的数量
-		protected int size;
-		protected static final int ELEMENT_NOT_FOUND = -1;
-		/**
-		 * 元素的数量*/
-		public int size() {
-			return size;
-		}
-		
-		/**
-		 * 是否为空*/
-		public boolean isEmpty() {
-			return size == 0;
-		}
-		
-		protected void outOfBounds(int index) {
-			throw new IndexOutOfBoundsException("Index:" + index + ",Size:" + size);	
-		}
-		
-		protected void rangeCheck(int index) {
-			if (index < 0 || index >= size) {
-				outOfBounds(index);
-			}
-		}
-		
-		protected void rangeCheckForAdd(int index) {
-			if (index < 0 || index > size) {
-				outOfBounds(index);
-			}
-		}
-		
-		/**
-		 * 添加元素到尾部
-		 * @param element*/
-		public void add(E element) {
-			add(size, element);
-		}
+	// 元素的数量
+	protected int size;
 
-		@Override
-		public void clear() {
-		}
+	/**
+	 * 元素的数量
+	 */
+	public int size() {
+		return size;
+	}
 
-		@Override
-		public boolean contains(E element) {
-			return false;
-		}
+	/**
+	 * 是否为空
+	 */
+	public boolean isEmpty() {
+		return size == 0;
+	}
 
-		@Override
-		public E get(int index) {
-			return null;
-		}
+	/**
+	 * 添加元素到尾部
+	 * 
+	 * @param element
+	 */
+	public void add(E element) {
+		add(size, element);
+	}
 
-		@Override
-		public E set(int index, E element) {
-			return null;
-		}
+	protected void outOfBounds(int index) {
+		throw new IndexOutOfBoundsException("Index:" + index + ",Size:" + size);
+	}
 
-		@Override
-		public void add(int index, E element) {
+	protected void rangeCheck(int index) {
+		if (index < 0 || index >= size) {
+			outOfBounds(index);
 		}
+	}
 
-		@Override
-		public E remove(int index) {
-			return null;
+	protected void rangeCheckForAdd(int index) {
+		if (index < 0 || index > size) {
+			outOfBounds(index);
 		}
-
-		@Override
-		public int indexOf(E element) {
-			return 0;
-		}
+	}
 
 }

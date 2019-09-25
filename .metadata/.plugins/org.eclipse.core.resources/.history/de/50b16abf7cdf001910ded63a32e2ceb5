@@ -1,0 +1,27 @@
+package com.leetcode.bl;
+
+
+
+public class _237_Leetcode_DeleteNode {
+	
+	private int size;
+	private ListNode first;
+	
+	//删除链表中的某个节点
+	public void deleteNode(ListNode node) {
+		node.val = node.next.val;
+		node.next = node.next.next;
+	}
+	
+	public void addNode(int val) {
+		if (first == null) {
+			first = new ListNode(val);
+			first.next = null;
+		} else {
+			ListNode node = first;
+			while(node.next) {
+				node = node.next;
+			}
+		}
+	}
+}

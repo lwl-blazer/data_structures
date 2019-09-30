@@ -8,6 +8,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="public ListNode reverseList2(ListNode head) {"/>
+			<item value="public static ArrayList&lt;ListNode&gt; array;"/>
 			<item value="  @Override"/>
 			<item value="DEFAULT_CAPACITY"/>
 		</list>

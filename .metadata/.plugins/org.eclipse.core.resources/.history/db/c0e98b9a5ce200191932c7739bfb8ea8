@@ -30,7 +30,7 @@ public class Application {
 		list1.addListlNode(node5);
 		System.out.println(list1);
 		
-		list1.reverseList2(node5);
+		list1.reverseList2(node1);
 		System.out.println(list1);
 	}
 

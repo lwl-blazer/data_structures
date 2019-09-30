@@ -14,23 +14,10 @@ public class Application {
 //		System.out.println(lists);
 
 		Reverse_LinkedList list1 = new Reverse_LinkedList();
-		ListNode node1 = new ListNode(10);
-		list1.addListlNode(node1);
-
-		ListNode node2 = new ListNode(20);
-		list1.addListlNode(node2);
-		
-		ListNode node3 = new ListNode(30);
-		list1.addListlNode(node3);
-		
-		ListNode node4 = new ListNode(40);
-		list1.addListlNode(node4);
-		
-		ListNode node5 = new ListNode(50);
-		list1.addListlNode(node5);
+		addNode(list1);
 		System.out.println(list1);
 		
-		list1.reverseList2(node5);
+		list1.reverseList2(array.get(0));
 		System.out.println(list1);
 	}
 

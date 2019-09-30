@@ -21,4 +21,11 @@
     <fullyQualifiedTypeName name="com.list.bl.LinkedList.Node"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.core.gen.NodeLIRBuilder"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.leetcode.bl.Leetcode_DeleteNode"/>
+    <fullyQualifiedTypeName name="com.leetcode.bl.Reverse_LinkedList"/>
+    <fullyQualifiedTypeName name="com.leetcode.bl.SubLinkedList"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.calc.AddNode"/>
+    <fullyQualifiedTypeName name="sun.tools.tree.ThisExpression"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.leetcode.bl.ListNode"/>
 </qualifiedTypeNameHistroy>
